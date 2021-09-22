@@ -266,7 +266,7 @@ a {
   margin: 0 auto;
   max-width: 960px;
   width: 90%;
-  overflow: auto; }
+  /*overflow: auto;*/ }
 
 .container-narrow {
   margin: 0;
