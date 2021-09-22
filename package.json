@@ -1,0 +1,14 @@
+{
+    "name": "storytellers",
+    "version": "1.0.0",
+    "description": "storytellers website",
+    "main": "index.js",
+    "scripts": {
+        "sass": "node-sass -w scss/ -o public/css/ --recursive"
+    },
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+        "node-sass": "^6.0.1"
+    }
+}
