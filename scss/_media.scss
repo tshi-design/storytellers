@@ -71,8 +71,6 @@
            background: $white;
            padding: 0.5rem 1rem;
            border-bottom: none;
-           border-radius: 40px;
-
            i {
                display:none;
            }
@@ -82,15 +80,7 @@
 
 }
 
-@media screen and (max-width:650px){
-    .gallery {
-        .three-column {
-            display: grid;
-            grid-template-columns: repeat(2,1fr);
-        }
-        }
 
-}
 
 @media screen and (max-width: 470px) {
     .search-bar {

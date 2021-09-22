@@ -225,7 +225,6 @@
             .gallery {
                 display: flex;
                 flex-direction: column;
-                /*justify-content: center;*/
                 padding-bottom: 3rem;
                 ul {
                     width: 100%;
@@ -236,12 +235,7 @@
                     padding-bottom: 3rem;
                     grid-template-columns: repeat(auto-fit,minmax(200px, 1fr));
                 }
-                /*.four-column {
-                    grid-template-columns: repeat(4, 1fr);
-                }
-                .three-column  {
-                    grid-template-columns: repeat(3, 1fr);
-                }*/
+
                 li {
                     background: white;
                     /*max-height: auto;*/
@@ -342,10 +336,12 @@
                 .container {
                     display: flex;
                     justify-content: center;
+                    text-align: center;
                 }
 
                 h2 {
                     color: $white;
+
                 }
             }
 
