@@ -152,6 +152,49 @@ p {
   font-weight: normal;
   font-style: normal; }
 
+/*Header________________________________*/
+header {
+  background-color: white;
+  padding-top: 1.5rem; }
+
+header .row {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 1.5rem;
+  position: relative; }
+
+header .column:last-child {
+  text-align: right; }
+
+header li {
+  display: inline-block;
+  margin-right: 1rem; }
+
+header .logo {
+  max-height: 24px;
+  width: auto;
+  align-self: center;
+  display: inline; }
+
+header .search {
+  display: flex;
+  justify-content: flex-end; }
+
+header .search-bar {
+  padding-left: 0.5rem;
+  background: transparent;
+  outline: none;
+  border: 1.5px solid black;
+  border-right: 0;
+  max-height: 32px;
+  width: 320px; }
+
+header .genres {
+  display: flex;
+  justify-content: center;
+  padding: 2rem; }
+
+/*Footer__________________________________*/
 footer {
   background-color: white;
   color: black;
@@ -223,6 +266,10 @@ footer p {
     flex-direction: row;
     justify-content: flex-start;
     gap: 1rem; }
+  .content .sidebar .sidebar-content {
+    background: none;
+    padding: 0;
+    margin: 0; }
   .content .sidebar .row {
     display: block;
     background: #ffff;
@@ -238,7 +285,10 @@ footer p {
     height: 16px; }
   .hero {
     background-size: cover;
-    background-position-x: 50%; } }
+    background-position-x: 50%; }
+  .sidebar h5 {
+    font-size: 0.8rem;
+    line-height: 1.5rem; } }
 
 @media screen and (max-width: 580px) {
   .footer .row {
@@ -250,63 +300,10 @@ footer p {
   .footer a {
     margin: 1rem 0; } }
 
-/* Utilities */
-/* Document
------------------------------------------*/
-*,
-*:before,
-*:after {
-  box-sizing: border-box; }
-
-html {
-  font-size: 16px; }
-
-body {
-  background: #e8e9eb;
-  font-family: "Poppins-Regular", sans-serif;
-  font-size: 1rem;
-  line-height: 1.5rem; }
-
-body html {
-  width: 100%;
-  height: 100%; }
-
-a {
-  color: black;
-  background: none;
-  text-decoration: none;
-  font-family: "Poppins-Regular", sans-serif;
-  margin: 1rem 0; }
-
-a:hover {
-  color: #f09051; }
-
-/* Layout
------------------------------------------*/
-.container {
-  margin: 0 auto;
-  max-width: 960px;
-  width: 90%;
-  /*overflow: auto;*/ }
-
-.container-narrow {
-  margin: 0;
-  max-width: 700px;
-  width: 100%;
-  overflow: auto; }
-
-.row {
-  display: flex;
-  align-items: baseline; }
-
-.column {
-  flex: 1; }
-
 .button {
   font-family: "Poppins-Medium", sans-serif;
   display: inline-block;
-  text-decoration: none;
-  border: none; }
+  text-decoration: none; }
 
 .button:hover {
   color: #f09051;
@@ -315,30 +312,36 @@ a:hover {
 .big {
   text-align: center;
   padding: 12px 40px;
-  font-size: 16px; }
+  font-size: 16px;
+  border: none; }
 
 .square {
   border: none;
   padding: 0 16px;
-  max-height: 32px; }
+  max-height: 32px;
+  border: none; }
 
 .square:hover {
   background-color: #f09051; }
 
 .black {
   background: black;
-  color: #ffff; }
+  color: #ffff;
+  border: none; }
 
 .white {
   background: #ffff;
-  color: black; }
+  color: black;
+  border: none; }
 
 .transparent {
   background: none;
-  color: black; }
+  color: black;
+  border: none; }
 
 .add-wishlist:hover {
-  color: #ffff; }
+  color: #ffff;
+  border: none; }
 
 .menu-btn {
   background: white;
@@ -369,52 +372,59 @@ a:hover {
 .transparent:hover {
   color: #f09051; }
 
-.gallery .button {
-  margin: 16px 0 0 0; }
+/* Utilities */
+/* Document
+-----------------------------------------*/
+*,
+*:before,
+*:after {
+  box-sizing: border-box; }
+
+html {
+  font-size: 16px; }
+
+body {
+  background: #e8e9eb;
+  font-family: "Poppins-Regular", sans-serif;
+  font-size: 1rem;
+  line-height: 1.5rem; }
+
+body html {
+  width: 100%;
+  height: 100%; }
+
+a {
+  color: black;
+  background: none;
+  text-decoration: none;
+  font-family: "Poppins-Regular", sans-serif; }
+
+a:hover {
+  color: #f09051; }
+
+/* Layout
+-----------------------------------------*/
+.container {
+  margin: 0 auto;
+  max-width: 960px;
+  width: 90%;
+  /*overflow: auto;*/ }
+
+.container-narrow {
+  margin: 0;
+  max-width: 700px;
+  width: 100%;
+  overflow: auto; }
+
+.row {
+  display: flex;
+  align-items: baseline; }
+
+.column {
+  flex: 1; }
 
 /* Components
 -----------------------------------------*/
-header {
-  background-color: white;
-  padding-top: 1.5rem; }
-
-header .row {
-  display: flex;
-  justify-content: space-between;
-  padding-bottom: 1.5rem;
-  position: relative; }
-
-header .column:last-child {
-  text-align: right; }
-
-header li {
-  display: inline-block;
-  margin-right: 1rem; }
-
-header .logo {
-  max-height: 24px;
-  width: auto;
-  align-self: center;
-  display: inline; }
-
-header .search {
-  display: flex;
-  justify-content: flex-end; }
-
-header .search-bar {
-  padding-left: 0.5rem;
-  background: transparent;
-  outline: none;
-  border: 1.5px solid black;
-  border-right: 0;
-  max-height: 32px;
-  width: 320px; }
-
-header .genres {
-  display: flex;
-  justify-content: center;
-  padding: 2rem; }
-
 /* Hero*/
 .hero {
   background-size: contain;
@@ -443,12 +453,12 @@ header .genres {
   /*padding-top: auto;*/ }
 
 /* Gallery */
-.gallery {
+.gallery-name {
   display: flex;
-  flex-direction: column;
-  padding-bottom: 3rem; }
+  justify-content: space-between;
+  align-items: baseline; }
 
-.gallery ul {
+.gallery {
   width: 100%;
   display: grid;
   grid-column-gap: 12px;
@@ -463,16 +473,12 @@ header .genres {
   display: flex;
   flex-direction: column;
   padding: 0;
-  height: 448px;
+  /*height: 448px;*/
   min-width: 200px;
   margin-bottom: 1.5rem; }
 
 .gallery li:hover {
   transform: translateY(-16px); }
-
-.gallery .gallery-name {
-  display: flex;
-  justify-content: space-between; }
 
 .gallery .book-cover {
   height: 248px;
@@ -515,8 +521,8 @@ header .genres {
 
 .gallery .price {
   align-self: flex-end;
-  padding-right: 16px;
-  height: 40px; }
+  padding: 0 1rem 1rem 0;
+  /*height: 40px;*/ }
 
 /* Advertisement*/
 .advertisement {
@@ -567,10 +573,11 @@ header .genres {
 .banner {
   margin-bottom: 3rem; }
 
-.sidebar {
+.sidebar .sidebar-content {
   background: #ffff;
-  padding: 1rem;
-  margin-right: 0.5rem; }
+  padding: 0rem 1rem 16rem 1rem;
+  margin: 3rem 1rem 1rem 1rem;
+  border-top: 0; }
 
 .sidebar .row {
   justify-content: space-between;

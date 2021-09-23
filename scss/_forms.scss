@@ -1,0 +1,83 @@
+.button {
+  font-family: "Poppins-Medium", sans-serif;
+  display: inline-block;
+  text-decoration: none;
+  &:hover {
+    color: $orange;
+    cursor: pointer;
+  }
+}
+
+.big {
+  text-align: center;
+  padding: 12px 40px;
+  font-size: 16px;
+  border: none;
+}
+
+.square {
+  border: none;
+  padding: 0 16px;
+  max-height: 32px;
+  border: none;
+  &:hover {
+    background-color: $orange;
+  }
+}
+
+.black {
+  background: $black;
+  color: $white;
+  border: none;
+}
+
+.white {
+  background: $white;
+  color: $black;
+  border: none;
+}
+
+.transparent {
+  background: none;
+  color: $black;
+  border: none;
+}
+
+.add-wishlist:hover {
+  color: $white;
+  border: none;
+}
+
+.menu-btn {
+  background: white;
+  color: black;
+  outline: none;
+  border: none;
+  padding-right: 16px;
+  align-self: flex-start;
+}
+
+.menu-btn:hover {
+  color: $orange;
+}
+
+.exit-btn {
+  background: white;
+  color: black;
+  outline: none;
+  border: none;
+  padding: 16px;
+  :hover {
+    color: $orange;
+  }
+}
+
+.transparent {
+  background: none;
+  text-decoration: none;
+  color: black;
+  &:hover {
+    color: $orange
+  }
+}
+

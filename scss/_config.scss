@@ -2,6 +2,51 @@ $orange: #f09051;
 $black: black;
 $white: #ffff;
 
+/*Header________________________________*/
+header {
+  background-color: white;
+  padding-top: 1.5rem;
+  .row {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 1.5rem;
+    position: relative;
+  }
+  .column:last-child {
+    text-align: right;
+  }
+  li {
+    display: inline-block;
+    margin-right: 1rem;
+  }
+  .logo {
+    max-height: 24px;
+    width: auto;
+    align-self: center;
+    display: inline;
+  }
+  .search {
+    display: flex;
+    justify-content: flex-end;
+  }
+  .search-bar {
+    padding-left: 0.5rem;
+    background: transparent;
+    outline: none;
+    border: 1.5px solid black;
+    border-right: 0;
+    max-height: 32px;
+    width: 320px;
+  }
+  .genres {
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+  }
+}
+
+/*Footer__________________________________*/
+
 footer {
   background-color: white;
   color: black;

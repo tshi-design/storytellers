@@ -66,6 +66,12 @@
            justify-content: flex-start;
            gap: 1rem;
        }
+       .sidebar-content {
+           background: none;
+           padding: 0;
+           margin: 0;
+
+       }
        .row {
            display: block;
            background: $white;
@@ -92,6 +98,11 @@
     .hero {
         background-size: cover;
         background-position-x: 50%;
+    }
+    .sidebar h5 {
+        font-size: 0.8rem;
+        line-height: 1.5rem;
+
     }
 }
 
