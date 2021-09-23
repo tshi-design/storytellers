@@ -63,6 +63,9 @@
             .column {
                 flex: 1;
             }
+            section {
+              margin-bottom: 4rem;
+            }
 
 
             /* Components
@@ -78,7 +81,6 @@
                 flex-direction: column;
                 justify-content: center;
                 position: relative;
-                margin-bottom: 3rem;
                 background: url('../images/photo.jpg') no-repeat center right/contain;
                 height: 70vh;
                 background-color: $white;
@@ -100,7 +102,8 @@
 
 
 
-            /* Gallery */
+            /* Gallery____________________________________________ */
+
             .gallery-name {
                 display: flex;
                 justify-content: space-between;
@@ -113,8 +116,8 @@
                     grid-column-gap: 12px;
                     justify-content: center;
                     cursor: pointer;
-                    padding-bottom: 3rem;
                     grid-template-columns: repeat(auto-fit,minmax(200px, 1fr));
+                    margin-bottom: 2rem;
 
 
                 li {
@@ -176,13 +179,12 @@
                     /*height: 40px;*/
                 }
             }
-            /* Advertisement*/
+            /* Advertisement____________________________________*/
             
             .advertisement {
                 background-color: white;
                 color: black;
                 overflow: auto;
-                margin-bottom: 2rem;
                 .container {
                     margin: 5rem auto;
                     max-width: 960px;
@@ -205,23 +207,38 @@
                 }
             }
 
+
+            /* Banner _______________________________*/
+
             .banner {
-                background: url('../images/science-fiction.jpg') no-repeat center center/cover;
                 width: 100%;
                 height: 30vh;
-                display: flex;
+               /* display: flex;*/
                 align-items: center;
+              position: relative;
                 .container {
                     display: flex;
                     justify-content: center;
                     text-align: center;
+
                 }
+              img {
+                object-fit: cover;
+                height: 100%;
+                width: 100%;
+              }
+
 
                 h2 {
                     color: $white;
+                  position: absolute;
+                  top: 140px;
 
                 }
             }
+
+
+            /* Content_______________________________________*/
 
             .content {
                 .container {
@@ -231,14 +248,13 @@
                 }
             }
 
-            .banner {
-                margin-bottom: 3rem;
-            }
+
+            /* Sidebar_______________________________________*/
 
             .sidebar {
                 .sidebar-content{
                     background: $white;
-                    padding: 0rem 1rem 16rem 1rem;
+                    padding: 0 1rem 16rem 1rem;
                     margin: 3rem 1rem 1rem 1rem;
                     border-top: 0;
 
