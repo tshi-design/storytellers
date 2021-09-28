@@ -1,4 +1,17 @@
 
+.search {
+  display: flex;
+}
+
+.search-bar {
+  padding-left: 0.5rem;
+  background: transparent;
+  outline: none;
+  border: 1.5px solid black;
+  border-right: 0;
+  max-height: 32px;
+  width: 320px;
+}
 
 /* Hero*/
 
@@ -38,6 +51,7 @@
   display: flex;
   justify-content: space-between;
   align-items: baseline;
+  margin-bottom: 1rem;
 }
 
 .gallery {
@@ -242,7 +256,7 @@
 
   .bar-column {
     display: flex;
-
+    align-items: center;
     justify-content: space-between;
     width: 100vw;
 
@@ -269,14 +283,19 @@
   }
 
   .small {
-    margin: 0 4px 4px 0;
+    margin: 0 4px 0 0;
 
   }
 
   .qty-input {
     display: flex;
     gap: 8px;
-    align-items: center;
+    align-items: baseline;
+
+    input {
+      padding: 0 1rem;
+      align-items: baseline;
+    }
 
   }
 
@@ -292,22 +311,23 @@
 
   .line-group {
     display: flex;
-    align-items: center;
+    justify-content: space-between;
+    align-items: baseline;
   }
 
   .total, .submit-btn {
     justify-content: end;
-    margin: 2rem 0;
+    margin: 1rem 0;
   }
 
   .zip {
     gap: 1rem;
-    margin: 1rem 0;
   }
 
-  input {
-    font-size: 1rem;
-  }
+}
 
-
+input {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  padding: 0.3rem 1rem;
 }

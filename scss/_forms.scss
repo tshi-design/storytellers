@@ -20,6 +20,7 @@
   border-radius: 16px;
   font-size: 0.8rem;
   font-family: "Poppins-Regular", sans-serif;
+
 }
 .square {
   border: none;
@@ -46,7 +47,10 @@
 .transparent {
   background: none;
   color: $black;
-  border: 1px solid $black;
+
+}
+.btn-border {
+  border: $black solid 1px;
 }
 
 .add-wishlist:hover {

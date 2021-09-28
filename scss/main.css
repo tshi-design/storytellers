@@ -1,5 +1,3 @@
-/* Document
------------------------------------------*/
 /*Header________________________________*/
 header {
   background-color: white;
@@ -20,16 +18,7 @@ header {
     align-self: center;
     display: inline; }
   header .search {
-    display: flex;
     justify-content: flex-end; }
-  header .search-bar {
-    padding-left: 0.5rem;
-    background: transparent;
-    outline: none;
-    border: 1.5px solid black;
-    border-right: 0;
-    max-height: 32px;
-    width: 320px; }
   header .genres {
     display: flex;
     justify-content: center;
@@ -136,8 +125,10 @@ p {
 
 .transparent {
   background: none;
-  color: black;
-  border: 1px solid black; }
+  color: black; }
+
+.btn-border {
+  border: black solid 1px; }
 
 .add-wishlist:hover {
   color: #ffff;
@@ -255,6 +246,18 @@ p {
   src: url("../fonts/BebasNeue-Regular.ttf") format("truetype");
   font-weight: normal;
   font-style: normal; }
+.search {
+  display: flex; }
+
+.search-bar {
+  padding-left: 0.5rem;
+  background: transparent;
+  outline: none;
+  border: 1.5px solid black;
+  border-right: 0;
+  max-height: 32px;
+  width: 320px; }
+
 /* Hero*/
 .hero {
   background-size: contain;
@@ -282,7 +285,8 @@ p {
 .gallery-name {
   display: flex;
   justify-content: space-between;
-  align-items: baseline; }
+  align-items: baseline;
+  margin-bottom: 1rem; }
 
 .gallery {
   width: 100%;
@@ -415,6 +419,7 @@ p {
   align-items: center; }
 .table .bar-column {
   display: flex;
+  align-items: center;
   justify-content: space-between;
   width: 100vw; }
 .table img {
@@ -429,11 +434,14 @@ p {
 .table p {
   margin-bottom: 1rem; }
 .table .small {
-  margin: 0 4px 4px 0; }
+  margin: 0 4px 0 0; }
 .table .qty-input {
   display: flex;
   gap: 8px;
-  align-items: center; }
+  align-items: baseline; }
+  .table .qty-input input {
+    padding: 0 1rem;
+    align-items: baseline; }
 .table label {
   font-family: "Poppins-Regular", sans-serif;
   font-size: 1rem; }
@@ -441,15 +449,18 @@ p {
   margin-left: 3rem; }
 .table .line-group {
   display: flex;
-  align-items: center; }
+  justify-content: space-between;
+  align-items: baseline; }
 .table .total, .table .submit-btn {
   justify-content: end;
-  margin: 2rem 0; }
-.table .zip {
-  gap: 1rem;
   margin: 1rem 0; }
-.table input {
-  font-size: 1rem; }
+.table .zip {
+  gap: 1rem; }
+
+input {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  padding: 0.3rem 1rem; }
 
 *,
 *:before,
@@ -564,7 +575,8 @@ a {
   .table .inner {
     margin-bottom: 1rem; }
   .table .bar-column {
-    flex-direction: column; }
+    flex-direction: column;
+    align-items: unset; }
   .table .price {
     margin-left: 1.5rem; } }
 @media screen and (max-width: 580px) {
@@ -582,7 +594,9 @@ a {
   .banner h5 {
     font-size: 3rem;
     line-height: 3.5rem;
-    top: 40px; } }
+    top: 40px; }
+  .banner h2 {
+    top: 110px; } }
 @media screen and (max-width: 470px) {
   .search-bar {
     max-width: 200px; }

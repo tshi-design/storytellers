@@ -99,6 +99,7 @@
 
         .bar-column {
             flex-direction: column;
+            align-items: unset;
 
         }
         .price {
@@ -122,11 +123,18 @@
     .footer a {
         margin: 1rem 0;
     }
-    .banner h5 {
+    .banner {
+        h5 {
+
         font-size: 3rem;
         line-height: 3.5rem;
         top: 40px
     }
+        h2 {
+            top: 110px
+        }
+    }
+
 
 }
 
