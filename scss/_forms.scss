@@ -2,9 +2,10 @@
   font-family: "Poppins-Medium", sans-serif;
   display: inline-block;
   text-decoration: none;
+  cursor: pointer;
   &:hover {
     color: $orange;
-    cursor: pointer;
+
   }
 }
 
@@ -14,7 +15,12 @@
   font-size: 16px;
   border: none;
 }
-
+.small {
+  padding: 0.25rem 0.5rem;
+  border-radius: 16px;
+  font-size: 0.8rem;
+  font-family: "Poppins-Regular", sans-serif;
+}
 .square {
   border: none;
   padding: 0 16px;
@@ -34,13 +40,13 @@
 .white {
   background: $white;
   color: $black;
-  border: none;
+  border: 1px solid $black;
 }
 
 .transparent {
   background: none;
   color: $black;
-  border: none;
+  border: 1px solid $black;
 }
 
 .add-wishlist:hover {

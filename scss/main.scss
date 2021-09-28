@@ -1,45 +1,54 @@
-            @import 'typography';
-            @import 'fonts';
-            @import 'config';
-            @import 'media';
-            @import 'forms';
+/* Document
+-----------------------------------------*/
 
-            /* Utilities */
-            /* Document
------------------------------------------*/
-            
-            *,
-            *:before,
-            *:after {
-                box-sizing: border-box;
-            }
-            
-            html {
-                font-size: 16px;
-            }
-            
-            body {
-                background: #e8e9eb;
-                font-family: "Poppins-Regular", sans-serif;
-                font-size: 1rem;
-                line-height: 1.5rem;
-                html {
-                    width: 100%;
-                    height: 100%;
-                }
-            }
-            
-            a {
-                color: $black;
-                background: none;
-                text-decoration: none;
-                font-family: "Poppins-Regular", sans-serif;
-                &:hover {
-                    color: $orange;
-                }
-            }
-            /* Layout
------------------------------------------*/
+
+@import 'config';
+@import 'typography';
+@import 'forms';
+
+
+
+
+
+
+@import 'fonts';
+
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  background: #e8e9eb;
+  font-family: "Poppins-Regular", sans-serif;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  html {
+    width: 100%;
+    height: 100%;
+  }
+}
+a {
+  color: $black;
+  background: none;
+  text-decoration: none;
+  font-family: "Poppins-Regular", sans-serif;
+  &:hover {
+    color: $black
+  }
+}
+
+
+
+
+/* Utilities */
+
             
             .container {
                 margin: 0 auto;
@@ -76,7 +85,7 @@
             
             .hero {
                 background-size: contain;
-                background-color: white;
+                background-color: $white;
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
@@ -233,6 +242,7 @@
                     color: $white;
                   position: absolute;
                   top: 140px;
+                  letter-spacing: 1rem ;
 
                 }
             }
@@ -275,7 +285,101 @@
                     display: none;
 
                 }
+                ul a {
+                  font-family: "Poppins-Regular", sans-serif;
+                  font-size: 1rem;
+                  line-height: 1.5rem;
+                }
 
             }
+            .table {
+              .bar {
+                display: flex;
+                border-bottom: 1px solid $black;
+                margin-bottom: 1rem;
+                align-items: center;
+
+
+              }
+              .bar-column {
+                display: flex;
+               
+                justify-content: space-between;
+                width: 100vw;
+
+              }
+
+
+              img {
+                height: 12rem;
+                width: 8rem;
+                object-fit: cover;
+                align-self: center;
+                margin: 0 1rem 1rem 0;
+              }
+
+              .inner {
+                display: flex;
+                flex-direction: column;
+
+              }
+
+
+
+              p {
+                margin-bottom: 1rem;
+              }
+
+              .small {
+                margin: 0 4px 4px 0;
+
+              }
+
+              .qty-input {
+                display: flex;
+                gap: 8px;
+                align-items: center;
+
+              }
+
+              label {
+                font-family: "Poppins-Regular", sans-serif;
+                font-size: 1rem;
+              }
+
+              .price {
+                margin-left: 3rem;
+
+              }
+              .line-group {
+                display: flex;
+                align-items: center;
+              }
+
+              .total, .submit-btn {
+                justify-content: end;
+                margin: 2rem 0;
+              }
+
+              .zip {
+                gap: 1rem;
+                margin: 1rem 0;
+              }
+                input {
+                  font-size: 1rem;
+                }
+
+
+
+            }
+
+
+
+@import 'media';
+
+
+
+
+
 
             
