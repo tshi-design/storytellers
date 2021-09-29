@@ -1,10 +1,4 @@
-
-@import 'config';
-@import 'typography';
-@import 'forms';
-@import 'fonts';
-@import 'components';
-
+@import 'variables'; //colors? config? core?
 
 *,
 *:before,
@@ -27,6 +21,7 @@ body {
     height: 100%;
   }
 }
+@import 'typography';
 
 
 
@@ -58,22 +53,12 @@ section {
   margin-bottom: 4rem;
 }
 
-a {
-  color: $black;
-  background: none;
-  text-decoration: none;
-  font-family: "Poppins-Regular", sans-serif;
 
-  &:hover {
-    color: $black
-  }
-}
 
+//@import 'config';
+
+@import 'header+footer';
+@import 'forms';
+@import 'components';
 @import 'media';
-
-
-
-
-
-
-            
+@import 'fonts';
