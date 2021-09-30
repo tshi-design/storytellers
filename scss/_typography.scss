@@ -51,5 +51,14 @@ p {
 }
 
 
+a {
+    color: $black;
+    background: none;
+    text-decoration: none;
+    font-family: "Poppins-Regular", sans-serif;
 
+    &:hover {
+        color: $black
+    }
+}
 

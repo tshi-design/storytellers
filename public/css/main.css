@@ -1,7 +1,5 @@
-/*Header________________________________*/
 header {
-  background-color: white;
-  padding-top: 1.5rem; }
+  background-color: white; }
 
 header .row {
   display: flex;
@@ -17,18 +15,10 @@ header li {
   margin-right: 1rem; }
 
 header .logo {
-  max-height: 24px;
+  max-height: 32px;
   width: auto;
   align-self: center;
   display: inline; }
-
-header .search {
-  justify-content: flex-end; }
-
-header .genres {
-  display: flex;
-  justify-content: center;
-  padding: 2rem; }
 
 /*Footer__________________________________*/
 footer {
@@ -95,6 +85,15 @@ p {
 .typographic-logo.small {
   font-size: 1.5rem;
   line-height: 1.25rem; }
+
+a {
+  color: black;
+  background: none;
+  text-decoration: none;
+  font-family: "Poppins-Regular", sans-serif; }
+
+a:hover {
+  color: black; }
 
 .button {
   font-family: "Poppins-Medium", sans-serif;
@@ -278,10 +277,11 @@ p {
   font-weight: normal;
   font-style: normal; }
 
-.search {
+.search-bar {
+  justify-content: flex-end;
   display: flex; }
 
-.search-bar {
+.search-input {
   padding-left: 0.5rem;
   background: transparent;
   outline: none;
@@ -289,6 +289,19 @@ p {
   border-right: 0;
   max-height: 32px;
   width: 320px; }
+
+input {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  padding: 0.3rem 1rem; }
+
+.flex-start {
+  justify-content: flex-start; }
+
+.genres {
+  display: flex;
+  justify-content: center;
+  padding: 2rem; }
 
 /* Hero*/
 .hero {
@@ -343,7 +356,7 @@ p {
 .gallery li:hover {
   transform: translateY(-16px); }
 
-.gallery .book-cover {
+.gallery .product-preview {
   height: 248px;
   width: 80%;
   object-fit: cover;
@@ -468,6 +481,10 @@ p {
   font-size: 1rem;
   line-height: 1.5rem; }
 
+/* Shopping Cart_______________________________________*/
+.img-obj-pos-top img {
+  object-position: top; }
+
 .table .bar {
   display: flex;
   border-bottom: 1px solid black;
@@ -503,7 +520,7 @@ p {
   align-items: baseline; }
 
 .table .qty-input input {
-  padding: 0 1rem;
+  padding: 0 0 0 1rem;
   align-items: baseline; }
 
 .table label {
@@ -525,27 +542,25 @@ p {
 .table .zip {
   gap: 1rem; }
 
-input {
-  font-size: 1rem;
-  margin-bottom: 1rem;
-  padding: 0.3rem 1rem; }
-
 *,
 *:before,
 *:after {
   box-sizing: border-box; }
 
 html {
-  font-size: 16px; }
+  font-size: 16px;
+  width: 100%;
+  height: 100%; }
 
 body {
+  width: 100%;
+  height: 100%;
   background: #e8e9eb;
   font-family: "Poppins-Regular", sans-serif;
   font-size: 1rem;
   line-height: 1.5rem; }
 
-body html {
-  width: 100%;
+main {
   height: 100%; }
 
 /* Utilities */
@@ -569,15 +584,6 @@ body html {
 
 section {
   margin-bottom: 4rem; }
-
-a {
-  color: black;
-  background: none;
-  text-decoration: none;
-  font-family: "Poppins-Regular", sans-serif; }
-
-a:hover {
-  color: black; }
 
 @media screen and (max-width: 1024px) {
   header .content-navigation {

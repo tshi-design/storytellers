@@ -1,9 +1,12 @@
 
+@import 'variables';
 @import 'config';
+@import 'header+footer';
 @import 'typography';
 @import 'forms';
 @import 'fonts';
 @import 'components';
+
 
 
 *,
@@ -14,18 +17,22 @@
 
 html {
   font-size: 16px;
+  width: 100%;
+  height: 100%;
 }
 
 body {
+  width: 100%;
+  height: 100%;
   background: #e8e9eb;
   font-family: "Poppins-Regular", sans-serif;
   font-size: 1rem;
   line-height: 1.5rem;
 
-  html {
-    width: 100%;
-    height: 100%;
-  }
+}
+
+main {
+  height: 100%;
 }
 
 
@@ -58,16 +65,7 @@ section {
   margin-bottom: 4rem;
 }
 
-a {
-  color: $black;
-  background: none;
-  text-decoration: none;
-  font-family: "Poppins-Regular", sans-serif;
 
-  &:hover {
-    color: $black
-  }
-}
 
 @import 'media';
 
