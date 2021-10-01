@@ -152,8 +152,6 @@ input {
 
   .container {
     margin: 5rem auto;
-    max-width: 960px;
-    width: 90%;
     background: white;
   }
 
@@ -170,7 +168,6 @@ input {
   }
 
   .img {
-    margin-bottom: 16px;
     cursor: pointer;
   }
 }
@@ -348,3 +345,29 @@ input {
 
 }
 
+.advertisement {
+  .align-flex-start {
+    align-self: flex-start;
+  }
+  h4 {
+    margin-bottom: 0.5rem;
+  }
+  p {
+    margin-bottom: 1.5rem;
+
+  }
+  h5 {
+    margin-bottom: 1.5rem;
+  }
+  a {
+    margin-right: 1rem;
+  }
+  .paragraph-with-header {
+    margin-top: 2rem;
+    h4 {
+      margin-bottom: 0.3rem;
+    }
+
+  }
+
+}

@@ -363,8 +363,6 @@ input {
   overflow: auto; }
   .advertisement .container {
     margin: 5rem auto;
-    max-width: 960px;
-    width: 90%;
     background: white; }
   .advertisement .row {
     display: flex;
@@ -375,7 +373,6 @@ input {
     border-left: 4px solid #f09051;
     height: 392px; }
   .advertisement .img {
-    margin-bottom: 16px;
     cursor: pointer; }
 
 /* Banner _______________________________*/
@@ -475,6 +472,21 @@ input {
 .table .zip {
   gap: 1rem; }
 
+.advertisement .align-flex-start {
+  align-self: flex-start; }
+.advertisement h4 {
+  margin-bottom: 0.5rem; }
+.advertisement p {
+  margin-bottom: 1.5rem; }
+.advertisement h5 {
+  margin-bottom: 1.5rem; }
+.advertisement a {
+  margin-right: 1rem; }
+.advertisement .paragraph-with-header {
+  margin-top: 2rem; }
+  .advertisement .paragraph-with-header h4 {
+    margin-bottom: 0.3rem; }
+
 *,
 *:before,
 *:after {
@@ -486,15 +498,10 @@ html {
   height: 100%; }
 
 body {
-  width: 100%;
-  height: 100%;
   background: #e8e9eb;
   font-family: "Poppins-Regular", sans-serif;
   font-size: 1rem;
   line-height: 1.5rem; }
-
-main {
-  height: 100%; }
 
 /* Utilities */
 .container {
@@ -542,10 +549,9 @@ section {
     .gallery li:hover {
       transform: none; }
 
-  .advertisement .row {
+  .advertisement .media-column-reverse {
     display: flex;
     flex-direction: column-reverse; }
-
   .advertisement .vl {
     display: none; } }
 @media screen and (min-width: 1025px) {
@@ -577,7 +583,11 @@ section {
       padding: 0.5rem 1rem;
       border-bottom: none; }
       .content .sidebar .row i {
-        display: none; } }
+        display: none; }
+
+  .advertisement .media-column {
+    display: flex;
+    flex-direction: column; } }
 @media screen and (max-width: 650px) {
   .table h2 {
     font-size: 3rem; }
