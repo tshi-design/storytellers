@@ -306,7 +306,9 @@ input {
 
   }
 
-  .qty-input {
+
+
+  .qty-row  {
     display: flex;
     gap: 8px;
     align-items: baseline;
@@ -332,6 +334,7 @@ input {
     display: flex;
     justify-content: space-between;
     align-items: baseline;
+    gap: 2rem;
   }
 
   .total, .submit-btn {
@@ -344,6 +347,9 @@ input {
   }
 
 }
+
+
+/* Product page____________________________________*/
 
 .advertisement {
   .align-flex-start {
@@ -365,9 +371,64 @@ input {
   .paragraph-with-header {
     margin-top: 2rem;
     h4 {
-      margin-bottom: 0.3rem;
+      margin-bottom: 1rem;
     }
 
   }
 
 }
+
+/* Order Success _______________________________*/
+
+
+.subhead-plus-paragraph-line {
+  margin-bottom: 2rem;
+  h4 {
+    margin-bottom: 1rem;
+  }
+  p {
+    margin-bottom: 0.5rem;
+  }
+  .font-medium {
+    font-family: "Poppins-Medium", sans-serif
+  }
+}
+.order-status {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3rem;
+  padding: 3rem 0 0 0;
+
+
+  img{
+    border-radius: 50%;
+    height: 120px;
+    width: 120px;
+    border: 4px solid $white;
+  }
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  .hl {
+    border-top: 3px dashed  $white;
+    stroke-linecap: round;
+    width: 48px;
+    stroke-dashoffset: 3;
+  }
+    .complete {
+      border: 3px solid $orange;}
+
+  .round-img-plus-capture {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  }
+
+
