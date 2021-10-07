@@ -101,12 +101,21 @@
   }
 }
 @media screen and (max-width: 736px) {
-  .checkout {
-    form {
+  .folders-bin {
+    .justify-content-space-between {
       display: flex;
-      flex-direction: column;
+      flex-direction: column-reverse;
       padding: 2rem;
     }
+  }
+
+  .media-transform-to-row-wrap {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .media-convert-to-btn {
+    width: 147px;
+    border-radius: 0;
   }
 }
 
@@ -149,15 +158,11 @@
     margin: 1rem 0;
   }
   .banner {
-    h5 {
-
-      font-size: 3rem;
-      line-height: 3.5rem;
-      top: 40px
-    }
 
     h2 {
-      top: 110px
+      top: 42px;
+      font-size: 4rem;
+      line-height: 4.5rem;
     }
   }
   .order-status {

@@ -1,6 +1,6 @@
 .btn {
   font-family: "Poppins-Medium", sans-serif;
-  display: inline-block;
+  /*display: inline-block;*/
   text-decoration: none;
   cursor: pointer;
   &:hover {
@@ -47,15 +47,18 @@
   text-align: center;
   font-size: 16px;
   font-family: Poppins-Regular;
-  padding-bottom: 8px;
-  padding-top: 8px;
+  padding: 8px 0;
   width: 226px;
+
 }
 
 
 .transparent {
   background: none;
   color: $black;
+  &:hover {
+    border: 1px solid $orange;
+  }
 
 }
 .btn-border {
@@ -98,5 +101,15 @@
   &:hover {
     color: $orange
   }
+}
+.facebook-btn {
+  color: #1877f2;
+}
+.btn-icon-text {
+  display: flex;
+  gap: 0.5rem;
+  padding: 0.5rem 1rem;
+  align-items: center;
+  justify-content: center;
 }
 

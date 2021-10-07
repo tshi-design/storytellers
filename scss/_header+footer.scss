@@ -7,13 +7,16 @@ header {
     padding: 1rem 0;
     position: relative;
   }
+
   .column:last-child {
     text-align: right;
   }
+
   li {
     display: inline-block;
     margin-right: 1rem;
   }
+
   .logo {
     max-height: 32px;
     width: auto;
@@ -30,23 +33,29 @@ footer {
   background-color: white;
   color: black;
   overflow: auto;
+  margin-top: auto;
+
   .container {
     background: white;
     padding: 1rem 0;
   }
+
   .row {
     justify-content: space-between;
     align-items: center;
 
   }
+
   .hg {
     gap: 2rem;
   }
+
   li {
     display: inline-block;
     margin-left: 1rem;
     align-self: flex-end;
   }
+
   p {
     padding-bottom: 0;
   }

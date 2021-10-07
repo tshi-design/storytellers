@@ -24,7 +24,8 @@ header .logo {
 footer {
   background-color: white;
   color: black;
-  overflow: auto; }
+  overflow: auto;
+  margin-top: auto; }
 
 footer .container {
   background: white;
@@ -97,7 +98,7 @@ a:hover {
 
 .btn {
   font-family: "Poppins-Medium", sans-serif;
-  display: inline-block;
+  /*display: inline-block;*/
   text-decoration: none;
   cursor: pointer; }
 
@@ -139,13 +140,15 @@ a:hover {
   text-align: center;
   font-size: 16px;
   font-family: Poppins-Regular;
-  padding-bottom: 8px;
-  padding-top: 8px;
+  padding: 8px 0;
   width: 226px; }
 
 .transparent {
   background: none;
   color: black; }
+
+.transparent:hover {
+  border: 1px solid #f09051; }
 
 .btn-border {
   border: black solid 1px; }
@@ -182,6 +185,16 @@ a:hover {
 
 .transparent:hover {
   color: #f09051; }
+
+.facebook-btn {
+  color: #1877f2; }
+
+.btn-icon-text {
+  display: flex;
+  gap: 0.5rem;
+  padding: 0.5rem 1rem;
+  align-items: center;
+  justify-content: center; }
 
 @font-face {
   font-family: "Poppins-Black";
@@ -549,6 +562,9 @@ input {
   gap: 1rem; }
 
 /* Product page____________________________________*/
+.advertisement .container {
+  background: transparent; }
+
 .advertisement .align-flex-start {
   align-self: flex-start; }
 
@@ -569,6 +585,9 @@ input {
 
 .advertisement .paragraph-with-header h4 {
   margin-bottom: 1rem; }
+
+.background-none {
+  background: transparent; }
 
 /* Order Success _______________________________*/
 .subhead-plus-paragraph-line {
@@ -618,19 +637,43 @@ input {
   gap: 0.5rem; }
 
 /* Checkout page __________________________________*/
-.checkout form {
+.folders-bin .container-max-width-656 {
+  max-width: 656px;
+  margin: 0 auto; }
+
+.folders-bin .container-max-width-656 {
+  max-width: 656px; }
+
+.folders-bin .container-max-width-800 {
+  max-width: 800px;
+  margin: 0 auto; }
+
+.folders-bin .folders {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+  margin: 0 2rem; }
+
+.folders-bin form {
+  display: flex;
   gap: 4rem;
   background: #ffff;
-  padding: 5rem;
+  padding: 2rem;
   border-radius: 0 0 16px 16px; }
 
-.checkout .tabs {
+.folders-bin .justify-content-space-between {
+  justify-content: space-between; }
+
+.folders-bin .justify-content-center {
+  justify-content: center; }
+
+.folders-bin .max-width-360 {
+  max-width: 360px; }
+
+.folders-bin .tabs {
   display: flex;
   gap: 1rem; }
 
-.checkout .tab {
+.folders-bin .tab {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -639,60 +682,64 @@ input {
   width: 220px;
   border-radius: 16px 16px 0 0; }
 
-.checkout .active {
+.folders-bin .active {
   background: #ffff; }
 
-.checkout .not-active {
+.folders-bin .not-active {
   background: silver; }
 
-.checkout .folder {
+.folders-bin .folder-label {
   font-family: "Poppins-Medium", sans-serif;
   font-size: 1rem;
   color: black; }
 
-.checkout .folder:hover {
-  cursor: pointer;
-  color: #f09051;
-  font-size: 1.2rem; }
+.folders-bin .folder-label:hover {
+  cursor: pointer; }
 
-.checkout .column-50 {
+.folders-bin .hover-orange-on-white:hover {
+  color: #f09051; }
+
+.folders-bin .hover-white-on-gray:hover {
+  color: #ffff; }
+
+.folders-bin .column-50 {
   display: flex;
   flex: 0 1 auto;
   flex-direction: column;
   gap: 0.5rem; }
 
-.checkout h4 {
-  margin: 1rem 0; }
+.folders-bin .padding-top-24px {
+  padding-top: 24px; }
 
-.checkout fieldset {
+.folders-bin fieldset {
   display: flex;
   flex-direction: column; }
 
-.checkout .margin-bottom-1rem {
+.folders-bin input {
+  border: 1px solid black;
+  border-radius: 0; }
+
+.folders-bin .margin-bottom-1rem {
   margin-bottom: 1rem; }
 
-.checkout ul {
+.folders-bin ul {
   display: flex;
   flex-direction: column;
   gap: 1rem; }
 
-.checkout .action-btn {
+.folders-bin .icon {
   display: flex;
-  background: #ffff;
-  color: black;
-  border: 1px solid black;
-  gap: 0.5rem;
-  padding: 0.5rem 1rem;
-  max-width: 14rem;
-  align-items: center;
-  justify-content: center; }
+  max-height: 4rem; }
 
-.checkout .icon {
-  max-height: 2rem;
-  object-fit: contain; }
+.folders-bin .icon img {
+  max-height: 24px; }
 
-.checkout .submit-btn {
-  max-width: 10rem; }
+.folders-bin .icon i {
+  font-size: 24px; }
+
+/* Account Settings______________________*/
+.account-settings {
+  margin-top: 3rem; }
 
 *,
 *:before,
@@ -705,6 +752,8 @@ html {
   height: 100%; }
 
 body {
+  width: 100%;
+  height: 100%;
   background: #e8e9eb;
   font-family: "Poppins-Regular", sans-serif;
   font-size: 1rem;
@@ -731,6 +780,11 @@ body {
 
 section {
   margin-bottom: 4rem; }
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%; }
 
 @media screen and (max-width: 1024px) {
   header .content-navigation {
@@ -795,10 +849,16 @@ section {
     flex-direction: column; } }
 
 @media screen and (max-width: 736px) {
-  .checkout form {
+  .folders-bin .justify-content-space-between {
     display: flex;
-    flex-direction: column;
-    padding: 2rem; } }
+    flex-direction: column-reverse;
+    padding: 2rem; }
+  .media-transform-to-row-wrap {
+    flex-direction: row;
+    flex-wrap: wrap; }
+  .media-convert-to-btn {
+    width: 147px;
+    border-radius: 0; } }
 
 @media screen and (max-width: 650px) {
   .table h2 {
@@ -820,12 +880,10 @@ section {
     justify-content: space-between; }
   .footer a {
     margin: 1rem 0; }
-  .banner h5 {
-    font-size: 3rem;
-    line-height: 3.5rem;
-    top: 40px; }
   .banner h2 {
-    top: 110px; }
+    top: 42px;
+    font-size: 4rem;
+    line-height: 4.5rem; }
   .order-status img {
     height: 80px;
     width: 80px; }

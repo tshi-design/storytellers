@@ -5,12 +5,12 @@
     <meta charset="UTF-8"/>
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>Checkout</title>
+    <title>Checkout Sign-up</title>
     <link rel="stylesheet" href="../public/css/normalize.css" type="text/css"/>
     <link rel="stylesheet" href="../public/css/main.css"/>
     <script src="https://kit.fontawesome.com/9f481dee3a.js" crossorigin="anonymous"></script>
 </head>
-
+<div class="wrapper">
 <body>
 <header>
     <div class="container">
@@ -37,20 +37,20 @@
     </section>
 
 
-    <section class="checkout log-in">
-        <div class="container">
+    <section class="folders-bin log-in">
+        <div class="container-max-width-656">
 
             <div class="tabs">
-                <div class="tab  active">
-                <a class="folder">Log In</a>
-                </div>
                 <div class="tab  not-active">
-                <a class="folder">Sign Up</a>
+                    <a class="folder-label hover-white-on-gray hover-orange-on-white">Log In</a>
+                </div>
+                <div class="tab  active">
+                    <a class="folder-label hover-orange-on-white">Sign Up</a>
                 </div>
             </div>
-            <form>
+            <form class="justify-content-space-between">
                 <div class="column">
-                    <div class="column-50">
+                    <div class="column-50 padding-top-0">
                         <fieldset>
                             <legend>Email</legend>
                             <input type="email" name="email">
@@ -59,32 +59,35 @@
                             <legend>Passwords</legend>
                             <input type="password" name="password">
                         </fieldset>
-                        <a href="#" class="margin-bottom-1rem">Forget your password?</a>
-                        <a class="submit-btn btn black big">Log In</a>
+                        <fieldset>
+                            <legend>Confirm Passwords</legend>
+                            <input type="password" name="password">
+                        </fieldset>
+                        <a href="#" class=" btn margin-bottom-1rem">Forget your password?</a>
+                        <a class="submit-btn btn black big">Sign Up</a>
                     </div>
                 </div>
                 <div class="column">
-                    <div class="column-50">
+                    <div class="column-50 padding-top-24px">
                         <ul>
                             <li class="btn-img-text">
-                                <div class="action-btn">
+                                <div class=" btn btn-icon-text white">
                                     <span class="icon"><i class="fab fa-apple"></i></span>
-                                    <span class="text"><p>Log In with Apple</p></span>
+                                    <span class="text btn"><p>Log In with Apple</p></span>
                                 </div>
                             </li>
                             <li class="btn-img-text">
-                                <div class="action-btn">
+                                <div class="btn btn-icon-text white">
                                     <span class="icon"><img src="../public/images/google-icon.png"/></span>
-                                    <span class="text"><p>Log In with Google</p></span>
+                                    <span class="text btn"><p>Log In with Google</p></span>
                                 </div>
                             </li>
                             <li class="btn-img-text">
-                                <div class="action-btn">
-                                    <span class="icon"><i class="fab fa-apple"></i></span>
-                                    <span class="text"><p>Log In with Facebook</p></span>
+                                <div class="btn btn-icon-text white">
+                                    <span class="icon facebook-btn"><i class="fab fa-facebook-square"></i></span>
+                                    <span class="text btn"><p>Log In with Facebook</p></span>
                                 </div>
                             </li>
-
 
 
                         </ul>
@@ -117,5 +120,5 @@
 </footer>
 
 </body>
-
+</div>
 </html>
