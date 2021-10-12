@@ -12,21 +12,21 @@ h2 {
 
 h3 {
     font-family: "Poppins-Medium", sans-serif;
-    font-size: 2rem;
-    line-height: 3rem;
+    font-size: 1.777rem;
+    line-height: 2.369rem;
 }
 
 h4 {
     font-family: "Poppins-Regular", sans-serif;
-    font-size: 1.5rem;
-    line-height: 2rem;
+    font-size: 1.333rem;
+    line-height: 1.777rem;
 
 }
 
 h5 {
     font-family: "Poppins-Medium", sans-serif;
     font-size: 1rem;
-    line-height: 1.5rem;
+    line-height: 1.333rem;
 
 }
 
@@ -34,8 +34,16 @@ h5 {
 p {
     font-family: "Poppins-Regular", sans-serif;
     font-size: 1rem;
-    stroke-width: 2rem;
+    stroke-width: 1.333rem;
+
+
 }
+.font-size-075 {
+    font-family: "Poppins-Regular", sans-serif;
+    font-size: 0.75rem;
+    stroke-width: 1rem;
+}
+
 
 .typographic-logo {
     font-family: "BebasNeue-Regular", sans-serif;
@@ -60,5 +68,8 @@ a {
     &:hover {
         color: $black
     }
+}
+.font-medium {
+    font-family: "Poppins-Medium", sans-serif;
 }
 

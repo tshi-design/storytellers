@@ -10,41 +10,40 @@
   <link rel="stylesheet" href="../public/css/main.css"/>
   <script src="https://kit.fontawesome.com/9f481dee3a.js" crossorigin="anonymous"></script>
 </head>
+
 <div class="wrapper">
-  <body>
-  <header>
-    <div class="container">
-      <div class="row">
-        <div class="column">
-          <a href="index.html"><img src="../public/images/logo.png" class="logo "/></a>
-        </div>
-        <ul>
-          <li><a href="profile_page ">Log In</a></li>
-          <li><a href="profile_page ">Sign Up</a></li>
-          <li><a href="save-4-later "><i class="fas fa-bookmark "></i></a></li>
-          <li><a href="shopping-cart "><i class="fas fa-shopping-cart "></i></a></li>
-        </ul>
+<body>
+<header>
+  <div class="container">
+    <div class="row">
+      <div class="column">
+        <a href="index.html"><img src="../public/images/logo.png" class="logo " /></a>
       </div>
-    
+      <ul>
+        <li><a href="profile_page ">Kate</a></li>
+        <li><a href="save-4-later "><i class="fas fa-bookmark "></i></a></li>
+        <li><a href="shopping-cart "><i class="fas fa-shopping-cart "></i></a></li>
+      </ul>
     </div>
-  </header>
+  </div>
+</header>
   
   <main>
     <section class="folders-bin account-settings">
       <div class="container-max-width-800">
         <div class="folders">
-        <div class="tabs media-transform-to-row-wrap">
-          <div class="tab  active media-convert-to-btn">
+        <div class="tabs  media-transform-to-row-wrap">
+          <div class="tab  tab-media-transform active media-convert-to-btn">
             <a class="folder-label hover-orange-on-white ">Account Settings</a>
           </div>
-          <div class="tab  not-active media-convert-to-btn">
-            <a class="folder-label hover-white-on-gray hover-orange-on-white ">Purchases</a>
+          <div class="tab tab-media-transform not-active media-convert-to-btn">
+            <a class="folder-label hover-white-on-gray">Purchases</a>
           </div>
-          <div class="tab  not-active media-convert-to-btn">
-            <a class="folder-label hover-white-on-gray hover-orange-on-white ">Payment</a>
+          <div class="tab tab-media-transform not-active media-convert-to-btn">
+            <a class="folder-label hover-white-on-gray">Payment</a>
           </div>
-          <div class="tab  not-active media-convert-to-btn">
-            <a class="folder-label hover-white-on-gray hover-orange-on-white ">Wish List</a>
+          <div class="tab tab-media-transform not-active media-convert-to-btn">
+            <a class="folder-label hover-white-on-gray">Wish List</a>
           </div>
         </div>
         <form class="justify-content-center">
@@ -52,7 +51,7 @@
             <div class="column-50 padding-top-0">
               <fieldset>
                 <legend>Name</legend>
-                <input type="name" name="name">
+                <input type="text" name="name">
               </fieldset>
               <fieldset>
                 <legend>Email</legend>
@@ -62,21 +61,22 @@
                 <legend>Passwords</legend>
                 <input type="password" name="password">
               </fieldset>
+              <h4 class="margin-bottom-05 margin-top-1">Shipping address</h4>
               <fieldset>
-                <legend>Shipping address</legend>
-                <input type="address" name="address">
+                <legend>Street</legend>
+                <input type="text" name="address">
               </fieldset>
               <fieldset>
                 <legend>City</legend>
-                <input type="city" name="city">
+                <input type="text" name="city">
               </fieldset>
               <fieldset>
                 <legend>Zip-code</legend>
-                <input type="zip-code" name="zip-code">
+                <input type="text" name="zip-code">
               </fieldset>
               <fieldset>
                 <legend>State</legend>
-                <input type="state" name="state">
+                <input type="text" name="state">
               </fieldset>
               <a class="submit-btn btn black big">Save Changes</a>
             </div>

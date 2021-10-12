@@ -106,6 +106,18 @@
       display: flex;
       flex-direction: column-reverse;
       padding: 2rem;
+
+    }
+    .tab-media-transform {
+      width: 120px;
+      height: 40px;
+      border-radius: 24px;
+      margin-bottom: 1rem;
+    }
+    .folder-label {
+      font-size: 0.8rem;
+
+
     }
   }
 
@@ -113,9 +125,10 @@
     flex-direction: row;
     flex-wrap: wrap;
   }
-  .media-convert-to-btn {
-    width: 147px;
-    border-radius: 0;
+
+
+  .flex-row-media-column {
+    flex-direction: column;
   }
 }
 
