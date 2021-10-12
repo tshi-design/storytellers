@@ -171,10 +171,13 @@
     margin: 1rem 0;
   }
   .banner {
+    .banner-media-lengthen {
+      height: 38vh;
+    }
 
     h2 {
       top: 42px;
-      font-size: 4rem;
+      font-size: 3rem;
       line-height: 4.5rem;
     }
   }
