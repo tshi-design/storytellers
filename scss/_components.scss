@@ -278,7 +278,7 @@ input {
   }
 }
 
-.table {
+.folder-bin {
   .bar {
     display: flex;
     border-bottom: 1px solid $black;
@@ -574,13 +574,64 @@ input {
   padding: 2rem 0;
 }
 /* Password Request___________________________*/
-.input-width-230  {
-  width: 230px;
+.password-request{
+  .container {
+    max-width: 480px;
+    margin-top: 3rem;
+  }
+  .column-50 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: $white;
+    padding: 2rem 1rem;
+  }
+  fieldset {
+    display: flex;
+    flex-direction: column;
+  }
+  input {
+    width: 256px;
+  }
+  .btn {
+    width: 256px;
+  }
+  p {
+    max-width: 256px;
+    text-align: center;
+  }
 }
 
+/*Payment_____________________________*/
+.bar {
+  .bar-column {
+    position: relative;
+  }
+  img {
+    width: 68px;
+    object-fit: contain;
+    height: auto;
+    margin: 0 1rem;
+  }
+  .font-medium {
+    margin-left: 0.5rem;
+  }
+  .fas {
+    font-size: 3rem;
+    color: #EAD800;
+    padding: 1rem;
+  }
+  .warning-icon {
+    position: absolute;
+    left: 1.5rem;
+  }
+}
 
 /* Small Classes______________________*/
-
+.container-max-width-380 {
+  max-width: 380px;
+  margin: 0 auto;
+}
 .container-max-width-656 {
   max-width: 656px;
   margin: 0 auto;
@@ -617,26 +668,6 @@ input {
 
 }
 
-.margin-top-0 {
-  margin-top: 0;
-}
-
-.margin-top-1 {
-  margin-top: 1rem;
-}
-
-.margin-top-2 {
-  margin-top: 2rem;
-}
-.margin-top-3 {
-  margin-top: 3rem;
-}
-.margin-top-4 {
-  margin-top: 4rem;
-}
-.margin-top-5 {
-  margin-top: 5rem;
-}
 
 .margin-bottom-0 {
   margin-bottom: 0;
@@ -670,7 +701,12 @@ input {
 .padding-bottom-2 {
   padding-bottom: 2rem;
 }
-
+.padding-bottom-3 {
+  padding-bottom: 3rem;
+}
+.padding-bottom-4 {
+  padding-bottom: 4rem;
+}
 .justify-content-space-between {
   justify-content: space-between;
 }
@@ -685,6 +721,9 @@ input {
 
 .max-width-360 {
   max-width: 360px;
+}
+.width-230  {
+  width: 230px;
 }
 
 .width-100 {

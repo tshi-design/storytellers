@@ -139,10 +139,14 @@ a:hover {
   color: #ffff;
   border: none; }
 
-.white {
+.white-border-black {
   background: #ffff;
   color: black;
   border: 1px solid black; }
+
+.white-no-border {
+  background: #ffff;
+  color: black; }
 
 .permanent-size {
   text-align: center;
@@ -521,58 +525,58 @@ input {
 .img-obj-pos-top img {
   object-position: top; }
 
-.table .bar {
+.folder-bin .bar {
   display: flex;
   border-bottom: 1px solid black;
   margin-bottom: 1rem;
   align-items: center; }
 
-.table .bar-column {
+.folder-bin .bar-column {
   display: flex;
   align-items: center;
   justify-content: space-between; }
 
-.table img {
+.folder-bin img {
   height: 12rem;
   width: 8rem;
   object-fit: cover;
   align-self: center;
   margin: 0 1rem 1rem 0; }
 
-.table .inner {
+.folder-bin .inner {
   display: flex;
   flex-direction: column; }
 
-.table .small {
+.folder-bin .small {
   margin: 0 4px 0 0; }
 
-.table .qty-row {
+.folder-bin .qty-row {
   display: flex;
   gap: 8px;
   align-items: baseline; }
 
-.table .qty-row input {
+.folder-bin .qty-row input {
   padding: 0 0 0 1rem;
   align-items: baseline; }
 
-.table label {
+.folder-bin label {
   font-family: "Poppins-Regular", sans-serif;
   font-size: 1rem; }
 
-.table .price {
+.folder-bin .price {
   margin-left: 3rem; }
 
-.table .line-group {
+.folder-bin .line-group {
   display: flex;
   justify-content: space-between;
   align-items: baseline;
   gap: 2rem; }
 
-.table .total, .table .submit-btn {
+.folder-bin .total, .folder-bin .submit-btn {
   justify-content: end;
   margin: 1rem 0; }
 
-.table .zip {
+.folder-bin .zip {
   gap: 1rem; }
 
 /* Product page____________________________________*/
@@ -733,10 +737,58 @@ input {
   padding: 2rem 0; }
 
 /* Password Request___________________________*/
-.input-width-230 {
-  width: 230px; }
+.password-request .container {
+  max-width: 480px;
+  margin-top: 3rem; }
+
+.password-request .column-50 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #ffff;
+  padding: 2rem 1rem; }
+
+.password-request fieldset {
+  display: flex;
+  flex-direction: column; }
+
+.password-request input {
+  width: 256px; }
+
+.password-request .btn {
+  width: 256px; }
+
+.password-request p {
+  max-width: 256px;
+  text-align: center; }
+
+/*Payment_____________________________*/
+.bar .bar-column {
+  position: relative; }
+
+.bar img {
+  width: 68px;
+  object-fit: contain;
+  height: auto;
+  margin: 0 1rem; }
+
+.bar .font-medium {
+  margin-left: 0.5rem; }
+
+.bar .fas {
+  font-size: 3rem;
+  color: #EAD800;
+  padding: 1rem; }
+
+.bar .warning-icon {
+  position: absolute;
+  left: 1.5rem; }
 
 /* Small Classes______________________*/
+.container-max-width-380 {
+  max-width: 380px;
+  margin: 0 auto; }
+
 .container-max-width-656 {
   max-width: 656px;
   margin: 0 auto; }
@@ -763,24 +815,6 @@ input {
 .flex-row-media-column {
   display: flex;
   flex-direction: row; }
-
-.margin-top-0 {
-  margin-top: 0; }
-
-.margin-top-1 {
-  margin-top: 1rem; }
-
-.margin-top-2 {
-  margin-top: 2rem; }
-
-.margin-top-3 {
-  margin-top: 3rem; }
-
-.margin-top-4 {
-  margin-top: 4rem; }
-
-.margin-top-5 {
-  margin-top: 5rem; }
 
 .margin-bottom-0 {
   margin-bottom: 0; }
@@ -812,6 +846,12 @@ input {
 .padding-bottom-2 {
   padding-bottom: 2rem; }
 
+.padding-bottom-3 {
+  padding-bottom: 3rem; }
+
+.padding-bottom-4 {
+  padding-bottom: 4rem; }
+
 .justify-content-space-between {
   justify-content: space-between; }
 
@@ -823,6 +863,9 @@ input {
 
 .max-width-360 {
   max-width: 360px; }
+
+.width-230 {
+  width: 230px; }
 
 .width-100 {
   width: 100%; }
@@ -968,14 +1011,14 @@ section {
     flex-direction: column; } }
 
 @media screen and (max-width: 650px) {
-  .table h2 {
+  .folder-bin h2 {
     font-size: 3rem; }
-  .table .inner {
+  .folder-bin .inner {
     margin-bottom: 1rem; }
-  .table .bar-column {
+  .folder-bin .bar-column {
     flex-direction: column;
     align-items: unset; }
-  .table .price {
+  .folder-bin .price {
     margin-left: 1.5rem; } }
 
 @media screen and (max-width: 580px) {

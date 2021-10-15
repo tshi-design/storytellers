@@ -38,11 +38,18 @@
   border: none;
 }
 
-.white {
+.white-border-black {
   background: $white;
   color: $black;
   border: 1px solid $black;
 }
+
+.white-no-border {
+  background: $white;
+  color: $black;
+}
+
+
 .permanent-size {
   text-align: center;
   font-size: 16px;
