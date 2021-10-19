@@ -119,4 +119,10 @@
   align-items: center;
   justify-content: center;
 }
+select {
+  border: 1px solid $black;
+  border-radius: 0;
+  font-size: 1rem;
+  padding: 0.3rem 1rem;
 
+}

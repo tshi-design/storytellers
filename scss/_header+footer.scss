@@ -50,10 +50,11 @@ footer {
     gap: 2rem;
   }
 
+
   li {
     display: inline-block;
-    margin-left: 1rem;
     align-self: flex-end;
+    padding: 0 1rem 0 0;
   }
 
   p {

@@ -100,6 +100,7 @@
     }
   }
 }
+
 @media screen and (max-width: 736px) {
   .folders-bin {
     .justify-content-space-between {
@@ -108,28 +109,32 @@
       padding: 2rem;
 
     }
-    .tab-media-transform {
-      width: 120px;
-      height: 40px;
-      border-radius: 24px;
-      margin-bottom: 1rem;
+
+    .tabs {
+      gap: 0;
     }
-    .folder-label {
-      font-size: 0.8rem;
 
-
+    .tab-media-transform {
+      width: 50%;
+      border-radius: 0;
+      margin-bottom: 0;
+      border: $white 2px solid;
     }
   }
 
   .media-transform-to-row-wrap {
     flex-direction: row;
-    flex-wrap: wrap;
+    flex-wrap: wrap-reverse;
   }
 
 
   .flex-row-media-column {
     flex-direction: column;
   }
+  .bar-column {
+    flex-direction: column;
+  }
+
 }
 
 @media screen and (max-width: 650px) {
@@ -155,20 +160,33 @@
     }
 
   }
+  .bar {
+    .warning-icon {
+      padding: 1rem;
+    }
+
+    .media-margin-bottom-plus-0-5 {
+      margin-bottom: 0.5rem;
+    }
+  }
 }
 
 
 @media screen and (max-width: 580px) {
-  .footer .row {
-    display: flex;
-    flex-direction: column-reverse;
-  }
-  .footer {
+  footer {
     display: flex;
     justify-content: space-between;
-  }
-  .footer a {
-    margin: 1rem 0;
+
+    .row {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 0.5rem;
+    }
+
+    a {
+      margin: 1rem 0;
+    }
   }
   .banner {
     .banner-media-lengthen {
@@ -188,6 +206,7 @@
 
 
     }
+
     h4 {
       font-size: 1rem;
     }
@@ -210,5 +229,10 @@
     font-size: 0.8rem;
     line-height: 1.5rem;
 
+  }
+  .folders-bin {
+    .tab-media-transform {
+      width: 100%;
+    }
   }
 }

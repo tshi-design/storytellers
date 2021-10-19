@@ -383,7 +383,7 @@ input {
   }
 
   a {
-    margin-right: 1rem;
+    margin: 0 1rem 1rem 0;
   }
 
   .paragraph-with-header {
@@ -604,28 +604,44 @@ input {
 
 /*Payment_____________________________*/
 .bar {
-  .bar-column {
-    position: relative;
-  }
   img {
     width: 68px;
     object-fit: contain;
     height: auto;
-    margin: 0 1rem;
+    margin: 1rem;
   }
   .font-medium {
     margin-left: 0.5rem;
   }
   .fas {
-    font-size: 3rem;
+    font-size: 2.3rem;
     color: #EAD800;
-    padding: 1rem;
+
   }
   .warning-icon {
-    position: absolute;
-    left: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem 2rem 2rem 0;
+
   }
 }
+.short-input {
+  max-width: 56px;
+}
+.options-group {
+  gap: 1rem;
+}
+label {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 0.75px;
+}
+.button-stack {
+  gap: 0.5rem;
+}
+
 
 /* Small Classes______________________*/
 .container-max-width-380 {
@@ -751,4 +767,11 @@ input {
 
 .padding-top-24px {
   padding-top: 24px;
+}
+
+.position-relative {
+  position: relative;
+}
+.display-block {
+  display: block;
 }
