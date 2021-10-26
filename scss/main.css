@@ -1035,9 +1035,9 @@ section {
   .order-status h4 {
     font-size: 1rem; } }
 @media screen and (max-width: 470px) {
-  .search-bar {
-    max-width: 200px; }
-
+  /*.search-bar {
+    max-width: 200px;
+  }*/
   header .logo {
     height: 16px; }
 
