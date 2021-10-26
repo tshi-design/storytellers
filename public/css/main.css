@@ -469,9 +469,9 @@ input {
 /* Banner _______________________________*/
 .banner {
   width: 100%;
-  /* display: flex;*/
   align-items: center;
-  position: relative; }
+  position: relative;
+  height: 30vh; }
 
 .banner .container {
   display: flex;
@@ -551,7 +551,8 @@ input {
 
 .folder-bin .inner {
   display: flex;
-  flex-direction: column; }
+  flex-direction: column;
+  max-width: 360px; }
 
 .folder-bin .small {
   margin: 0 4px 0 0; }
@@ -609,6 +610,9 @@ input {
 
 .advertisement .paragraph-with-header h4 {
   margin-bottom: 1rem; }
+
+.advertisement .product-page-img {
+  max-height: 565px; }
 
 .background-none {
   background: transparent; }
@@ -768,8 +772,37 @@ input {
   max-width: 256px;
   text-align: center; }
 
+/* Password request ______________________*/
+.contact-us .container {
+  max-width: 480px;
+  margin-top: 3rem; }
+
+.contact-us .column-50 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #ffff;
+  padding: 2rem 1rem; }
+
+.contact-us fieldset {
+  display: flex;
+  flex-direction: column; }
+
+.contact-us input {
+  width: 256px; }
+
+.contact-us .btn {
+  width: 256px; }
+
+.contact-us p {
+  max-width: 256px;
+  text-align: center; }
+
+.contact-us textarea {
+  height: 100px; }
+
 /*Payment_____________________________*/
-.bar img {
+.bar .small-image {
   width: 68px;
   object-fit: contain;
   height: auto;
@@ -802,6 +835,42 @@ label {
 
 .button-stack {
   gap: 0.5rem; }
+
+/* Error page_____________________________*/
+.showcase {
+  height: 100vh; }
+
+.showcase img {
+  width: 100%;
+  height: 100vh;
+  object-fit: cover; }
+
+.showcase-content {
+  display: flex;
+  background: #ffff; }
+
+.showcase-content .container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center; }
+
+.showcase-content h2 {
+  font-size: 7rem;
+  color: #f09051; }
+
+.showcase-content .type-group {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 3rem 1rem; }
+
+/* Success Page_____________*/
+.success-icon {
+  color: forestgreen;
+  font-size: 3rem;
+  padding-bottom: 1rem; }
 
 /* Small Classes______________________*/
 .container-max-width-380 {
@@ -860,7 +929,7 @@ label {
   padding-top: 0; }
 
 .padding-bottom-1 {
-  padding-top: 1rem; }
+  padding-bottom: 1rem; }
 
 .padding-bottom-2 {
   padding-bottom: 2rem; }
@@ -981,7 +1050,9 @@ section {
     display: flex;
     flex-direction: column-reverse; }
   .advertisement .vl {
-    display: none; } }
+    display: none; }
+  .showcase-content {
+    flex-direction: column; } }
 
 @media screen and (min-width: 1025px) {
   header .menu-btn,

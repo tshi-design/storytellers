@@ -185,9 +185,9 @@ input {
 
 .banner {
   width: 100%;
-  /* display: flex;*/
   align-items: center;
   position: relative;
+  height: 30vh;
 
 
 
@@ -297,16 +297,17 @@ input {
 
 
   img {
-    height: 12rem;
-    width: 8rem;
-    object-fit: cover;
-    align-self: center;
-    margin: 0 1rem 1rem 0;
-  }
+  height: 12rem;
+   width: 8rem;
+   object-fit: cover;
+   align-self: center;
+   margin: 0 1rem 1rem 0;
+ }
 
   .inner {
     display: flex;
     flex-direction: column;
+    max-width: 360px;
 
   }
 
@@ -394,7 +395,9 @@ input {
     }
 
   }
-
+  .product-page-img {
+    max-height: 565px;
+  }
 }
 
 .background-none {
@@ -602,9 +605,42 @@ input {
   }
 }
 
+/* Password request ______________________*/
+
+.contact-us {
+  .container {
+    max-width: 480px;
+    margin-top: 3rem;
+  }
+  .column-50 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: $white;
+    padding: 2rem 1rem;
+  }
+  fieldset {
+    display: flex;
+    flex-direction: column;
+  }
+  input {
+    width: 256px;
+  }
+  .btn {
+    width: 256px;
+  }
+  p {
+    max-width: 256px;
+    text-align: center;
+  }
+  textarea{
+    height: 100px;
+  }
+}
+
 /*Payment_____________________________*/
 .bar {
-  img {
+  .small-image {
     width: 68px;
     object-fit: contain;
     height: auto;
@@ -642,6 +678,48 @@ label {
   gap: 0.5rem;
 }
 
+
+/* Error page_____________________________*/
+.showcase {
+  height: 100vh;
+  .whole-width-picture {
+
+  }
+  img{
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+  }
+}
+.showcase-content {
+  display:flex;
+  background: $white;
+  .container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+  h2 {
+    font-size: 7rem;
+    color: $orange;
+  }
+  .type-group {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem 1rem;
+  }
+}
+
+
+/* Success Page_____________*/
+.success-icon {
+  color: $green;
+  font-size: 3rem;
+  padding-bottom: 1rem;
+}
 
 /* Small Classes______________________*/
 .container-max-width-380 {
@@ -712,7 +790,7 @@ label {
   padding-top: 0;
 }
 .padding-bottom-1 {
-  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 .padding-bottom-2 {
   padding-bottom: 2rem;
