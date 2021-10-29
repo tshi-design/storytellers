@@ -8,6 +8,8 @@
   <title>Home page</title>
   <link rel="stylesheet" href="../public/css/normalize.css" type="text/css"/>
   <link rel="stylesheet" href="../public/css/main.css"/>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="../public/js/nick.js"/>
   <script src="https://kit.fontawesome.com/9f481dee3a.js" crossorigin="anonymous"></script>
 </head>
 
@@ -19,11 +21,9 @@
         <a href="index.html"><img src="../public/images/logo.png" class="logo "/></a>
       </div>
       <ul>
-        <li><a href="log-in.html"></a></li>
-        <li><a href="save_for_later.html"><i class="fas fa-bookmark "></i></a>
-        </li>
-        <li><a href="shopping_cart.html"><i class="fas fa-shopping-cart "></i></a>
-        </li>
+        <li><a href="account_settings.html"><i class="fas fa-user"></i></a></li>
+        <li><a href="save_for_later.html"><i class="fas fa-bookmark "></i></a></li>
+        <li><a href="shopping_cart.html"><i class="fas fa-shopping-cart "></i></a></li>
       </ul>
     </div>
     <div class="row ">
@@ -34,8 +34,8 @@
       </div>
       <button class="menu-btn "><i class="fas fa-bars "></i></button>
       <div class="content-navigation ">
-        <button class="exit-btn "><i class="fas fa-times "></i></button>
-        <ul>
+        <button class="exit-btn"><i class="fas fa-times "></i></button>
+        <ul class="nav flex-row-media-column">
           <li><a href="#">All Books</a></li>
           <li><a href="#">Adults</a></li>
           <li><a href="#">Teens & Young Adults</a></li>
@@ -69,12 +69,13 @@
             <img src="../public/images/the-catcher-in-the-rye.jpg " class="product-preview "/>
             <span class="add-wishlist "><i class="fas fa-bookmark "></i></span>
           </div>
+        </a>
           <div class="product-bottom ">
             <h4 class="book-title ">The Catcher in the Rye</h4>
             <h5 class="price ">$0.00</h5>
             <a class="btn big black ">Add to cart </a>
           </div>
-        </a>
+
       </li>
       <li>
         <a href="clockwork_orange.html">
@@ -83,12 +84,12 @@
             <img src="../public/images/a-clockwork-orange.jpg " class="product-preview "/>
             <span class="add-wishlist "><i class="fas fa-bookmark "></i></span>
           </div>
+        </a>
           <div class="product-bottom ">
             <h4 class="book-title ">A Clockwork Orange</h4>
             <h5 class="price ">$0.00</h5>
             <a class="btn big black ">Add to cart </a>
           </div>
-        </a>
       </li>
       <li>
         <a href="fahrenheit_451.html">
@@ -97,12 +98,12 @@
             <img src="../public/images/fahrenheit-451.jpg " class="product-preview "/>
             <span class="add-wishlist "><i class="fas fa-bookmark "></i></span>
           </div>
+        </a>
           <div class="product-bottom ">
-            <h4 class="book-title ">Fahrenheit 451</h4>
+            <h4 class="book-title ">Fahrenheit 451 </h4>
             <h5 class="price ">$0.00</h5>
             <a class="btn big black ">Add to cart </a>
           </div>
-        </a>
       </li>
       <li>
         <a href="1984.html">
@@ -111,12 +112,12 @@
             <img src="../public/images/1984.jpg " class="product-preview "/>
             <span class="add-wishlist "><i class="fas fa-bookmark "></i></span>
           </div>
+        </a>
           <div class="product-bottom ">
             <h4 class="book-title ">1984</h4>
             <h5 class="price ">$0.00</h5>
             <a class="btn big black ">Add to cart </a>
           </div>
-        </a>
       </li>
     </ul>
 
@@ -153,17 +154,29 @@
       </div>
       <ul>
         <li>
-          <a href="instagram"> <i class="fab fa-instagram fa-1.5x "></i></a>
-        </li>
+          <a href="instagram"> <i class="fab fa-instagram fa-1.5x "></i></a></li>
         <li><a href="twitter"><i class="fab fa-twitter fa-1.5x "></i></a></li>
-        <li>
-          <a href="facebook"> <i class=" fab fa-facebook-f fa-1.5x "></i></a>
-        </li>
+        <li><a href="facebook"> <i class=" fab fa-facebook-f fa-1.5x "></i></a></li>
       </ul>
     </div>
   </div>
 </footer>
+<script>
+   /* $('.menu-btn').on('click', function () {
+        $('.content-navigation').addClass('active');
+    });
+    $('.exit-btn').on('click', function () {
+        $('.content-navigation').removeClass('active');
+    });*/
+   const mobileBtn=document.getElementsByClassName('menu-btn')
+   nav=document.getElementsByClassName('content-navigation')
+   mobileBtnExit=document.getElementsByClassName('exit-btn');
 
+   mobileBtn.addEventListener('click',()=> {
+       nav.classList.add('active');
+   })
+
+</script>
 </body>
 
 </html>

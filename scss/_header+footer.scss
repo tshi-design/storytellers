@@ -1,5 +1,6 @@
 header {
   background-color: white;
+  padding-top: 1rem;
 
   .row {
     display: flex;
@@ -11,11 +12,14 @@ header {
   .column:last-child {
     text-align: right;
   }
-
-  li {
-    display: inline-block;
-    margin-right: 1rem;
+  ul {
+    display: flex;
+    gap: 1rem;
   }
+
+  /*li {
+    display: inline-block;
+  }*/
 
   .logo {
     max-height: 24px;

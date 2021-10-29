@@ -2,17 +2,20 @@
   header .content-navigation {
     background: rgb(255, 255, 255);
     position: absolute;
+
     right: 0;
     z-index: 99;
-    padding-bottom: 4rem;
+    /* padding-bottom: 4rem;*/
     display: none;
-
-    .content-navigation li {
+    &.active {
       display: block;
-      justify-content: flex-end;
-      padding: 0.5rem 2rem;
-      width: 100%;
-      align-items: baseline;
+    }
+    ul {
+      display: flex;
+      flex-direction: column;
+      padding: 2rem 1rem;
+      gap: 0.5rem;
+
     }
 
     .exit-btn {
@@ -23,8 +26,6 @@
   }
 
   .gallery {
-
-
     li {
       margin-bottom: 24px;
 

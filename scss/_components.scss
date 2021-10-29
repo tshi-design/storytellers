@@ -11,7 +11,7 @@
   border: 1.5px solid black;
   border-right: 0;
   max-height: 32px;
-  width: 320px;
+  min-width: 250px;
 }
 
 input {
@@ -33,6 +33,20 @@ input {
 .subhead-plus-paragraph-line {
   display: flex;
   flex-direction: column;
+}
+
+.book-title {
+  height: 80px;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  white-space: break-spaces;
+  overflow: hidden;
+}
+.author {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 /* Hero*/
@@ -150,6 +164,8 @@ input {
     padding: 1rem 1rem 1rem 0;
   }
 }
+
+
 
 /* Advertisement____________________________________*/
 
@@ -365,6 +381,9 @@ input {
   .container {
     background: transparent;
   }
+  .column {
+    max-width: 100%;
+  }
 
   .align-flex-start {
     align-self: flex-start;
@@ -576,36 +595,10 @@ input {
 .container-wide {
   padding: 2rem 0;
 }
-/* Password Request___________________________*/
-.password-request{
-  .container {
-    max-width: 480px;
-    margin-top: 3rem;
-  }
-  .column-50 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background: $white;
-    padding: 2rem 1rem;
-  }
-  fieldset {
-    display: flex;
-    flex-direction: column;
-  }
-  input {
-    width: 256px;
-  }
-  .btn {
-    width: 256px;
-  }
-  p {
-    max-width: 256px;
-    text-align: center;
-  }
-}
 
-/* Password request ______________________*/
+
+
+/* Contact Us ______________________*/
 
 .contact-us {
   .container {
@@ -635,6 +628,7 @@ input {
   }
   textarea{
     height: 100px;
+    padding: 0.3rem 1rem ;
   }
 }
 
@@ -719,6 +713,43 @@ label {
   color: $green;
   font-size: 3rem;
   padding-bottom: 1rem;
+}
+
+/* Pop-up _____________________________*/
+.pop-up {
+  position: absolute;
+  background: rgba(0,0,0,0.6);
+  height: 100vh;
+  width: 100vw;
+  top: 0;
+  z-index: 1;
+}
+.pop-up{
+  .container {
+    max-width: 480px;
+    margin-top: 10rem;
+  }
+  .column-50 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: $white;
+    padding: 2rem 1rem;
+  }
+  fieldset {
+    display: flex;
+    flex-direction: column;
+  }
+  input {
+    width: 266px;
+  }
+  .btn {
+    width: 266px;
+  }
+  p {
+    max-width: 256px;
+    text-align: center;
+  }
 }
 
 /* Small Classes______________________*/

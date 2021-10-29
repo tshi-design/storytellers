@@ -1,5 +1,9 @@
 header {
-  background-color: white; }
+  background-color: white;
+  padding-top: 1rem;
+  /*li {
+    display: inline-block;
+  }*/ }
 
 header .row {
   display: flex;
@@ -10,9 +14,9 @@ header .row {
 header .column:last-child {
   text-align: right; }
 
-header li {
-  display: inline-block;
-  margin-right: 1rem; }
+header ul {
+  display: flex;
+  gap: 1rem; }
 
 header .logo {
   max-height: 24px;
@@ -327,7 +331,7 @@ select {
   border: 1.5px solid black;
   border-right: 0;
   max-height: 32px;
-  width: 320px; }
+  min-width: 250px; }
 
 input {
   font-size: 1rem;
@@ -345,6 +349,19 @@ input {
 .subhead-plus-paragraph-line {
   display: flex;
   flex-direction: column; }
+
+.book-title {
+  height: 80px;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  white-space: break-spaces;
+  overflow: hidden; }
+
+.author {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis; }
 
 /* Hero*/
 .hero {
@@ -590,6 +607,9 @@ input {
 .advertisement .container {
   background: transparent; }
 
+.advertisement .column {
+  max-width: 100%; }
+
 .advertisement .align-flex-start {
   align-self: flex-start; }
 
@@ -746,33 +766,7 @@ input {
 .container-wide {
   padding: 2rem 0; }
 
-/* Password Request___________________________*/
-.password-request .container {
-  max-width: 480px;
-  margin-top: 3rem; }
-
-.password-request .column-50 {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  background: #ffff;
-  padding: 2rem 1rem; }
-
-.password-request fieldset {
-  display: flex;
-  flex-direction: column; }
-
-.password-request input {
-  width: 256px; }
-
-.password-request .btn {
-  width: 256px; }
-
-.password-request p {
-  max-width: 256px;
-  text-align: center; }
-
-/* Password request ______________________*/
+/* Contact Us ______________________*/
 .contact-us .container {
   max-width: 480px;
   margin-top: 3rem; }
@@ -799,7 +793,8 @@ input {
   text-align: center; }
 
 .contact-us textarea {
-  height: 100px; }
+  height: 100px;
+  padding: 0.3rem 1rem; }
 
 /*Payment_____________________________*/
 .bar .small-image {
@@ -868,9 +863,43 @@ label {
 
 /* Success Page_____________*/
 .success-icon {
-  color: forestgreen;
+  color: #41AF52;
   font-size: 3rem;
   padding-bottom: 1rem; }
+
+/* Pop-up _____________________________*/
+.pop-up {
+  position: absolute;
+  background: rgba(0, 0, 0, 0.6);
+  height: 100vh;
+  width: 100vw;
+  top: 0;
+  z-index: 1; }
+
+.pop-up .container {
+  max-width: 480px;
+  margin-top: 10rem; }
+
+.pop-up .column-50 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #ffff;
+  padding: 2rem 1rem; }
+
+.pop-up fieldset {
+  display: flex;
+  flex-direction: column; }
+
+.pop-up input {
+  width: 266px; }
+
+.pop-up .btn {
+  width: 266px; }
+
+.pop-up p {
+  max-width: 256px;
+  text-align: center; }
 
 /* Small Classes______________________*/
 .container-max-width-380 {
@@ -1030,14 +1059,15 @@ section {
     position: absolute;
     right: 0;
     z-index: 99;
-    padding-bottom: 4rem;
+    /* padding-bottom: 4rem;*/
     display: none; }
-  header .content-navigation .content-navigation li {
-    display: block;
-    justify-content: flex-end;
-    padding: 0.5rem 2rem;
-    width: 100%;
-    align-items: baseline; }
+  header .content-navigation.active {
+    display: block; }
+  header .content-navigation ul {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem 1rem;
+    gap: 0.5rem; }
   header .content-navigation .exit-btn {
     position: absolute;
     top: 0;
@@ -1147,8 +1177,9 @@ section {
     font-size: 1rem; } }
 
 @media screen and (max-width: 470px) {
-  .search-bar {
-    max-width: 200px; }
+  /*.search-bar {
+    max-width: 200px;
+  }*/
   header .logo {
     height: 16px; }
   .hero {
