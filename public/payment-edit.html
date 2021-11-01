@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8"/>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Payment Edit</title>
+  <link rel="stylesheet" href="css/normalize.css" type="text/css"/>
+  <link rel="stylesheet" href="css/main.css"/>
+  <script src="https://kit.fontawesome.com/9f481dee3a.js" crossorigin="anonymous"></script>
+
+</head>
+<div class="wrapper">
+  <body>
+  <header>
+    <div class="container">
+      <div class="row">
+        <div class="column">
+          <a href="index.html"><img src="images/logo.png" class="logo "/></a>
+        </div>
+        <ul>
+          <li><a href="account_settings.html"><i class="fas fa-user"></i></a></li>
+          <li><a href="save_for_later.html"><i class="fas fa-bookmark "></i></a></li>
+          <li><a href="shopping_cart.html"><i class="fas fa-shopping-cart "></i></a></li>
+        </ul>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="folders-bin account-settings">
+      <div class="container-max-width-800">
+        <div class="folders">
+          <div class="tabs media-transform-to-row-wrap">
+            <div class="tab tab-media-transform active media-convert-to-btn">
+              <a class="folder-label hover-orange-on-white ">Payment</a>
+            </div>
+            <div class="tab tab-media-transform not-active media-convert-to-btn">
+              <a class="folder-label hover-white-on-gray">Purchases</a>
+            </div>
+            <div class="tab tab-media-transform not-active media-convert-to-btn">
+              <a class="folder-label hover-white-on-gray">Account Setting</a>
+            </div>
+            <div class="tab tab-media-transform not-active media-convert-to-btn">
+              <a class="folder-label hover-white-on-gray">Wish List</a>
+            </div>
+          </div>
+          <form class="justify-content-center">
+            <div class="column max-width-360">
+              <div class="column-50 padding-top-0">
+                <fieldset>
+                  <label>Card holder</label>
+                  <input type="text" name="name" value="Katherine McDonald">
+                </fieldset>
+                <fieldset>
+                  <label>Curd number</label>
+                  <input type="email" name="email" value="1234 1234 1234 1234">
+                </fieldset>
+                <fieldset class="margin-bottom-1 flex-row">
+                  <label>Expiration date</label>
+                  <div class="flex-row options-group">
+                    <select id="month">
+                      <option value="jan">Jan</option>
+                      <option value="feb">Feb</option>
+                      <option value="mar">Mar</option>
+                      <option value="apr">Apr</option>
+                      <option value="may">May</option>
+                      <option value="jun">Jun</option>
+                      <option value="jul">Jul</option>
+                      <option value="aug">Aug</option>
+                      <option value="sep">Sep</option>
+                      <option value="oct">Oct</option>
+                      <option value="nov">Nov</option>
+                      <option value="dec">Dec</option>
+                    </select>
+                    <select id="year">
+                      <option value="21">21</option>
+                      <option value="22">22</option>
+                      <option value="23">23</option>
+                      <option value="24">24</option>
+                      <option value="25">25</option>
+                      <option value="26">26</option>
+                      <option value="27">27</option>
+                      <option value="28">28</option>
+                      <option value="29">29</option>
+                      <option value="30">30</option>
+                      <option value="31">31</option>
+                      <option value="32">32</option>
+                    </select>
+                  </div>
+                </fieldset>
+                <fieldset class="margin-bottom-1">
+                  <label>CVV</label>
+                  <input class="short-input" type="password" name="password" value="123">
+                </fieldset>
+                <h4 class="margin-bottom-05">Billing address</h4>
+                <fieldset>
+                  <label>Street</label>
+                  <input type="text" name="address" value="128 Yellow Stone St.">
+                </fieldset>
+                <fieldset>
+                  <label>City</label>
+                  <input type="text" name="city" value="Emerald">
+                </fieldset>
+                <fieldset>
+                  <label>Zip-code</label>
+                  <input type="text" name="zip-code" value="00001">
+                </fieldset>
+                <fieldset class="margin-bottom-1">
+                  <label>State</label>
+                  <input type="text" name="state" value="Oz">
+                </fieldset>
+                <ul class="button-stack">
+                  <li><a class="submit-btn btn black big display-block">Save Changes</a></li>
+                  <li><a class="submit-btn btn white-border-black big display-block">Don't Save Changes</a></li>
+                  <li><a class="submit-btn btn white-border-black big display-block">Delete Card</a></li>
+                </ul>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container ">
+      <div class="row">
+        <div class="row hg">
+          <p>© 2021 TATIANA SHILNIKOVA, INC</p>
+          <a href="about.html">Contact</a>
+        </div>
+        <ul>
+          <li>
+            <a href="instagram"> <i class="fab fa-instagram fa-1.5x "></i></a>
+          </li>
+          <li><a href="twitter"><i class="fab fa-twitter fa-1.5x "></i></a></li>
+          <li>
+            <a href="facebook"> <i class=" fab fa-facebook-f fa-1.5x "></i></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+  </body>
+</div>
+</html>
