@@ -403,18 +403,27 @@ input {
   justify-content: center;
   cursor: pointer;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  margin-bottom: 2rem; }
+  margin-bottom: 2rem;
+  gap: 1rem;
+  /* li {
+    background: white;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    min-width: 200px;
+    margin-bottom: 1.5rem;
 
-.gallery li {
-  background: white;
-  display: flex;
-  flex-direction: column;
-  padding: 0;
-  min-width: 200px;
-  margin-bottom: 1.5rem; }
+    &:hover {
+      transform: translateY(-16px);
+    }
+  }*/ }
 
-.gallery li:hover {
-  transform: translateY(-16px); }
+.gallery .carousel-item {
+  background: #ffff;
+  margin-right: 1rem; }
+
+.gallery .carousel-item:nth-last-child(3) {
+  margin-right: 0; }
 
 .gallery .product-preview {
   height: 248px;
